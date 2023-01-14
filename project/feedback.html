@@ -1,0 +1,170 @@
+<!DOCTYPE html>    
+<html>    
+<head> <link rel="stylesheet" href="basiccss.css">    
+<style>   
+* {    
+  box-sizing: border-box;    
+}    
+    
+input[type=text], select, textarea {    
+  width: 100%;    
+  padding: 12px;    
+  border: 1px solid rgb(70, 68, 68);    
+  border-radius: 4px;    
+  resize: vertical;    
+}    
+input[type=email], select, textarea {    
+  width: 100%;    
+  padding: 12px;    
+  border: 1px solid rgb(70, 68, 68);    
+  border-radius: 4px;    
+  resize: vertical;    
+}    
+    
+label {    
+  padding: 12px 12px 12px 0;    
+  display: inline-block;    
+}    
+    
+input[type=submit] {    
+  background-color: rgb(37, 116, 161);    
+  color: white;    
+  padding: 12px 20px;    
+  border: none;    
+  border-radius: 4px;    
+  cursor: pointer;    
+  float: right;    
+}    
+    
+input[type=submit]:hover {    
+  background-color: #45a049;    
+}    
+    
+.container {    
+  border-radius: 5px;    
+  background-color: #f2f2f2;    
+  padding: 20px;    
+}    
+    
+.col-25 {    
+  float: left;    
+  width: 25%;    
+  margin-top: 6px;    
+}    
+    
+.col-75 {    
+  float: left;    
+  width: 75%;    
+  margin-top: 6px;    
+}    
+   
+.row:after {    
+  content: "";    
+  display: table;    
+  clear: both;    
+}       
+</style>    
+</head> <title>Feedback Page</title>   
+<body>   
+    <p id="topbar">
+        <a href="aboutus.html" title="All About Us">About</a>
+        <a href="feedback.html" title="Your valuable Feedback">Feedback</a>
+        <a href="categories.html" title="Services Provided">All Categories</a>
+        <a href="index.html" title="Home">Home</a>
+    </p> 
+<h2>FEEDBACK FORM</h2>    
+<div class="container">    
+  <form name="myForm" action="thankyou.html" method="post">    
+    <div class="row">    
+      <div class="col-25">    
+        <label for="fname">First Name</label>    
+      </div>    
+      <div class="col-75">    
+        <input type="text" id="fname" name="firstname" placeholder="Your name" required>    
+      </div>    
+    </div>    
+    <div class="row">    
+      <div class="col-25">    
+        <label for="lname">Last Name</label>    
+      </div>    
+      <div class="col-75">    
+        <input type="text" id="lname" name="lastname" placeholder="Your last name" required>    
+      </div>    
+    </div>    
+    <div class="row">    
+        <div class="col-25">    
+          <label for="email">Mail Id</label>    
+        </div>    
+        <div class="col-75">    
+          <input type="email" id="email" name="mailid" placeholder="Your mail id" required>    
+        </div>    
+      </div> 
+      <div class="row">    
+        <div class="col-25">    
+          <label for="service">Service Recieved</label>    
+        </div>    
+        <div class="col-75">    
+          <fieldset id="service" name="recieved" required>     
+            <label><input type="checkbox" name="wifi" value="wifi">Wi-Fi Service</input> </label>   
+            <label><input type="checkbox" name="electric" value="electric">Electrical Service</input> </label>          
+            <label><input type="checkbox" name="plumbling" value="plumbling">Plumbing Service</input></label>    
+            <label><input type="checkbox" name=""painting value="painting">Wall Painting</input></label>    
+            <label><input type="checkbox" name="care" value="care">Secial Care</input></label>    
+            <label><input type="checkbox" name="cleaning" value="cleaning">Cleaning Service</input></label>
+            <label><input type="checkbox" name="furniture" value="furniture">Furniture Assembly</input></label>    
+            <label><input type="checkbox" name="moving" value="moving">Moving House</input></label>    
+            <label><input type="checkbox" name="nothing" value="nothing">None</input></label>
+        </fieldset>    
+        </div>    
+      </div>
+      <div class="row">    
+        <div class="col-25">    
+          <label for="gender">Gender</label>    
+        </div>    
+        <div class="col-75">    
+          <input type="radio" id="gender" name="sexuality" required>:Female   
+          <input type="radio" id="gender" name="sexuality" required>:Male
+          <input type="radio" id="gender" name="sexuality" required>:Other
+        </div>    
+      </div>    
+    <div class="row">    
+      <div class="col-25">    
+        <label for="city">City</label>    
+      </div>    
+      <div class="col-75">    
+        <select id="city" name="city" required>    
+            <option value="none">Select City</option>   
+          <option value="mumbai">Mumbai</option>    
+          <option value="jaipur">Jaipur</option>    
+          <option value="kolkata">Kolkata</option>    
+          <option value="bengaluru">Bengaluru</option>    
+          <option value="chennai">Chennai</option>    
+          <option value="hyderabad">Hyderabad</option>    
+          <option value="vijayawada">Vijayawada</option>    
+        </select>    
+      </div>    
+    </div> 
+    <div class="row">    
+        <div class="col-25">    
+          <label for="query">Query</label>    
+        </div>    
+        <div class="col-75">    
+          <input type="text" id="query" name="query" placeholder="Your query if any">    
+        </div>    
+      </div>    
+    <div class="row">    
+      <div class="col-25">    
+        <label for="feed_back">FeedBack</label>    
+      </div>    
+      <div class="col-75">    
+        <textarea id="subject" name="subject" placeholder="Write your thoughts" style="height:200px" required></textarea>    
+      </div>    
+    </div>    
+    <div class="row">    
+      <input type="submit" value="Submit">    
+    </div>    
+  </form>    
+</div>    
+    
+</body>    
+</html>   

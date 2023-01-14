@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		body {
+  background-color: cornsilk;
+  align-items: center;
+  justify-content: center;
+}
+		#topbar {
+    overflow: hidden;
+    background-color: burlywood;
+}
+.ex .over {
+  position: absolute;
+  top: 2.5%;
+  left: 1%;
+text-align: center;
+font-size: 210%;
+color: #330C00;
+}
+       #topbar a{
+        float: right;
+        dispaly: block;
+        color: black;
+        text-align: center;
+        padding: 12px 20px;
+        text-decoration: none;
+       }
+
+      #topbar a:hover
+      {
+        background-color: ghostwhite;
+        color: brown;
+      }
+      .text{
+        text-align: center;
+        font-size: 25px; 
+      }
+  </style>
+</head>
+</html>
